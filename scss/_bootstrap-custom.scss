@@ -1,0 +1,27 @@
+// custom variables and override bootstrap variables
+
+$gray-base:                    #000;
+$white:                        #fff;
+$blue:                         #01bfd0;
+
+$body-bg:                      $white;
+$brand-info:            	   $blue;
+$border-radius-base:           0;
+$btn-info-border:              transparent;
+$btn-default-border:           transparent;
+$link-color:                   $blue;
+
+$font-family-sans-serif:       "Open Sans", Helvetica, Arial, sans-serif;
+$font-family-serif:            "Playfair Display", Times, serif;
+$font-size-base:               15px;
+$text-color:                   $gray-base;
+$headings-font-family:         $font-family-serif;
+$headings-font-weight:         400;
+
+$font-size-h1:                 35px;
+$font-size-h2:                 30px;
+$font-size-h3:                 24px;
+
+$screen-lg:                    1250px;
+$grid-gutter-width:            30px !default;
+$container-large-desktop:      (1170px + $grid-gutter-width);

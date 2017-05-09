@@ -1,0 +1,16 @@
+
+{% set img1 = 'http://raidance-042717.dev/wp-content/uploads/2017/04/another-bkg-img.png' %}
+{% set img2 = 'http://raidance-042717.dev/wp-content/uploads/2017/04/blog-bkg-img-1.png' %}
+{% set img3 = 'http://raidance-042717.dev/wp-content/uploads/2017/04/bg-visual3-1.jpg' %}
+{% set images = [img1,img2,img3] %}
+{# <section class="info-visual" style="background-image:url({{ post.thumbnail.src }});"> #}
+<section class="info-visual" style="background-image:url({{ random( images ) }});">	
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 page-relative">
+      	{{ function('yoast_breadcrumb', '<nav id="breadcrumbs" class="main-breadcrumbs">','</nav>', false ) }}
+        <h1>{{ post.title }}</h1>
+      </div>
+    </div>
+  </div>
+</section>

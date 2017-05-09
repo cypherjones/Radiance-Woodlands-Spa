@@ -1,0 +1,180 @@
+#header {
+	padding: 17px 0 0;
+
+	@include media("<tablet") {
+		padding: 15px 0 0;
+	}
+
+	.logo {
+		@include media("<tablet") {
+			float: none;
+			text-align: center;
+			margin: 0 0 15px;
+		}
+
+		a {
+			display: block;
+			height: 100%;
+		}
+	}
+
+	.contact-block {
+		padding: 30px 0 0;
+
+		@include media("<desktop") {
+			padding: 0;
+		}
+
+		@include media("<tablet") {
+			float: none;
+			text-align: center;
+		}
+
+		address {
+			margin: 7px 31px 0 0;
+			font-size: 14px;
+			line-height: 1.2;
+
+			@include media("<desktop") {
+				float: none;
+				margin: 0 0 20px;
+			}
+
+			@include media("<tablet") {
+				margin: 0 0 15px;
+			}
+
+			i {
+				font-size: 32px;
+				color: $blue;
+				vertical-align: middle;
+			}
+
+			span {
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0 0 0 6px;
+			}
+		}
+	}
+
+	.nav-holder {
+		background: $blue;
+		color: $white;
+		margin: 20px 0 0;
+		padding: 14px 0;
+		position: relative;
+
+		.nav-opener {
+			color: $white;
+			float: right;
+			width: 31px;
+			height: 31px;
+			background: #000;
+			background: $gray-base;
+			position: relative;
+			border-radius: 3px;
+
+			strong {
+				margin: 3px 0 0 -50px;
+				display: inline-block;
+			}
+
+			&:after,
+			&:before,
+			span {
+				@include animate(all);
+
+				background: #fff;
+				border-radius: 4px;
+				position: absolute;
+				top: 16px;
+				left: 25%;
+				right: 25%;
+				height: 3px;
+				margin-top: -2px;
+				text-indent: -9999px;
+
+				.nav-active & {
+					transform: rotate(45deg);
+					top: 16px;
+					left: 15%;
+					right: 15%;
+				}
+			}
+
+			span {
+				.nav-active & {
+					opacity: 0;
+				}
+			}
+
+			&:after,
+			&:before {
+				content: '';
+ 				top: 10px;
+			}
+
+			&:after {
+				top: 22px;
+
+				.nav-active & {
+					transform: rotate(-45deg);
+				}
+			}
+
+
+			@include media(">=tablet") {
+				display: none;
+			}
+		}
+
+		.nav-drop {
+			@extend %listreset;
+
+			display: flex;
+			justify-content: space-between;
+			text-transform: uppercase;
+
+			@include media("<tablet") {
+				@include animate(opacity visibility height);
+
+				opacity: 0;
+				visibility: hidden;
+				overflow: hidden;
+				position: absolute;
+				top: 100%;
+				left: 0;
+				right: 0;
+				z-index: 999;
+				background: $blue;
+				display: block;
+
+				.nav-active & {
+					opacity: 1;
+					visibility: visible;
+				}
+
+				li:last-child a {
+					border-width: 1px 0;
+				}
+
+				a {
+					display: block;
+					border: solid $white;
+					border-width: 1px 0 0;
+					padding: 10px 15px;
+				}
+			}
+
+			a {
+				color: $white;
+
+				&:hover {
+					text-decoration: none;
+					color: $gray-base;
+				}
+			}
+		}
+	}
+}

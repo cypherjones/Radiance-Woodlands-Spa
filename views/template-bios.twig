@@ -1,0 +1,26 @@
+{% include 'partials/page-header.twig' %}
+<section class="block-holder page-block">
+	<div class="container">
+	</div>
+	<div class="container">
+			<div class="four-blocks">
+				{% for bio in team %}
+					{# color class loop #}
+					{% if 0 == loop.index % 2 %}
+						{% set color = 'light' %}
+					{% else %}
+						{% set color = 'dark' %}
+					{% endif %}
+					<div class="block dark {{ color }}">
+						<img src="{{ TimberImage(bio.team_head_shot).src }}" alt="{{ post.title }}">
+						<div class="holder">
+							<h2>{{ bio.title }}</h2>
+							<h3>{{ bio.team_member_title}}</h3>
+							<a href="{{ bio.link }}" class="btn btn-default">READ MORE</a>
+						</div>
+					</div>
+				{% endfor %}
+		</div>
+	</div>
+</section>
+{% include 'partials/cta.twig' %}

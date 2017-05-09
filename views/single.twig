@@ -1,0 +1,23 @@
+
+  <section class="info-visual light" style="background-image:url({{ post.thumbnail.src }});">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 single-relative">
+          <h1>{{ post.title }}</h1>
+          {{ function( 'social_warfare' ) }}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content-holder">
+    <div class="container">
+      <div class="row">
+        <div class="content col-md-9 col-lg-8 col-md-offset-1 col-lg-offset-2">
+          {{post.content}}
+          <a href="#" class="book">Book your appointment</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+{% include 'partials/cta.twig' %}

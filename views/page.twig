@@ -1,0 +1,33 @@
+{% include 'partials/page-header.twig' %}
+
+<section class="block-holder page-block">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				{{post.content}}
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		{% if post.get_field('want_ps') %}
+			<div class="four-blocks">
+				{% for service in post.get_field('pages_and_services') %}
+					{# color class loop #}
+					{% if 0 == loop.index % 2 %}
+						{% set color = 'light' %}
+					{% else %}
+						{% set color = 'dark' %}
+					{% endif %}
+					<div class="block dark {{ color }}">
+						<img src="{{ TimberImage(service.background_image).src }}" alt="{{ post.title }}">
+						<div class="holder">
+							<h2>{{ service.title }}</h2>
+							<a href="{{ service.page_or_service_link }}" class="btn btn-default">READ MORE</a>
+						</div>
+					</div>
+				{% endfor %}
+			{% endif %}
+		</div>
+	</div>
+</section>
+{% include 'partials/cta.twig' %}

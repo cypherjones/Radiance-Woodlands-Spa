@@ -1,0 +1,31 @@
+<section class="info-visual" style="background-image:url({{ post.thumbnail.src }});">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 page-relative">
+          <h1>{{ post.title }}</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="block-holder page-block">
+	<div class="container">
+			<div class="four-blocks">
+				{% for blog in posts %}
+					{# color class loop #}
+					{% if 0 == loop.index % 2 %}
+						{% set color = 'light' %}
+					{% else %}
+						{% set color = 'dark' %}
+					{% endif %}
+					<div class="block dark {{ color }}">
+						<img src="{{ blog.thumbnail.src }}" alt="{{ post.title }}">
+						<div class="holder">
+							<h2>{{ blog.title }}</h2>
+							<a href="{{ blog.link }}" class="btn btn-default">READ MORE</a>
+						</div>
+					</div>
+				{% endfor %}
+		</div>
+	</div>
+</section>
+{% include 'partials/cta.twig' %}
