@@ -1,59 +1,60 @@
 /* Front Page 
 ----------------------------------------- */
 .front-page .block-holder .block {
-	padding: 56px 50px 54px;
-}
+  padding: 56px 50px 54px; }
+
 .reg-page.front-page .block-holder .block {
-	width: 390px;
-	height: 390px;
-}
+  width: 390px;
+  height: 390px; }
+
 /* Single
 ----------------------------------------- */
 .single .info-visual {
-	position: relative;
-}
+  position: relative; }
+
 .single .info-visual.light:after {
-	background: rgba(255, 255, 255, .5);
-}
+  background: rgba(255, 255, 255, 0.5); }
+
 .single .info-visual:after {
-	content: "";
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	bottom: 0px;
-	right: 0px;
-	z-index: 2;
-}
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 2; }
+
 /* Single and Pages
 ----------------------------------------- */
-.page-relative,	
+.page-relative,
 .single-relative {
-	z-index: 3;
-}
+  z-index: 3; }
+
 /* Pages 
 ----------------------------------------- */
 .reg-page .info-visual {
-	padding: 126px 0 0;
-}
+  padding: 126px 0 0; }
+
 .reg-page .info-visual h1 {
-	text-align: left;
-	font-size: 56px;
-}
+  text-align: left;
+  font-size: 56px; }
+
 .block-holder.page-block {
-	padding-top: 20px;
-}
+  padding-top: 20px; }
+
 .reg-page .block-holder .block {
-	width: 360px;
-	height: 360px;
-	justify-content: center;
-	vertical-align: middle;
-	margin: 0 25px 50px 0;
-}
+  width: 360px;
+  height: 360px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: middle;
+  margin: 0 25px 50px 0; }
+
 .breadcrumbs {
-	padding-bottom: 40px;
-}
+  padding-bottom: 40px; }
+
 /* Sidebar 
 ----------------------------------------- */
 .sidebar .four-blocks .block.dark {
-	margin: 0;
-}
+  margin: 0; }
