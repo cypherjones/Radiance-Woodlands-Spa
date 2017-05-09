@@ -12,7 +12,7 @@
             'post_type' => array(
               'post',
               ),
-            'post_status'    => 'published',
+            'post_status'    => 'publish',
             'posts_per_page' => 4      
             
           );
