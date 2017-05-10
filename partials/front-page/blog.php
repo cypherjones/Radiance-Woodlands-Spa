@@ -35,7 +35,7 @@
         
        ?>
       <div class="block <?php echo $color_class; ?>">
-        <img src="<?php echo $featured_img; ?>" alt="Looking Like a Zombie? How to Combat Dark Circles Under Your Eyes Lorem ipsum dolor sit amet, consectetuer adipiscin elit, volutpat adipiscing.">
+        <img src="<?php echo $featured_img; ?>" alt="">
         <div class="holder">
           <h2><?php echo the_title( ); ?></h2>
           <a href="<?php the_permalink(); ?>" class="btn btn-default">READ MORE</a>

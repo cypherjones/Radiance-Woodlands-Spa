@@ -7,7 +7,7 @@
 	width: 390px;
 	height: 390px;
 }
-/* Single
+/* Singles
 ----------------------------------------- */
 .single .info-visual {
 	position: relative;
@@ -52,8 +52,26 @@
 .breadcrumbs {
 	padding-bottom: 40px;
 }
+.page-block p {
+	line-height: 2em;
+	color: #373737;
+}
 /* Sidebar 
 ----------------------------------------- */
-.sidebar .four-blocks .block.dark {
+.sidebar .four-blocks .block.dark,
+.sidebar .four-blocks .block.light {
 	margin: 0;
+	width: 100%;
+	height: auto;
+}
+/* General 
+----------------------------------------- */
+.block .holder {
+	justify-content: center;
+	align-items: center;
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
 }
