@@ -170,22 +170,22 @@ if( function_exists('acf_add_options_page') ) {
   
 function event_post_type() {
       $labels = array(
-        'name'                => _x( 'Events', 'Post Type General Name', 'frtb' ),
-        'singular_name'       => _x( 'Event', 'Post Type Singular Name', 'frtb' ),
-        'menu_name'           => __( 'Events', 'frtb' ),
-        'parent_item_colon'   => __( 'Parent Events:', 'frtb' ),
-        'all_items'           => __( 'All Events', 'frtb' ),
-        'view_item'           => __( 'View Events', 'frtb' ),
-        'add_new_item'        => __( 'Add New Events', 'frtb' ),
-        'add_new'             => __( 'Add Events', 'frtb' ),
-        'edit_item'           => __( 'Edit Events', 'frtb' ),
-        'update_item'         => __( 'Update Events', 'frtb' ),
-        'search_items'        => __( 'Search Events', 'frtb' ),
+        'name'                => _x( 'Services', 'Post Type General Name', 'frtb' ),
+        'singular_name'       => _x( 'Service', 'Post Type Singular Name', 'frtb' ),
+        'menu_name'           => __( 'Services', 'frtb' ),
+        'parent_item_colon'   => __( 'Parent Services:', 'frtb' ),
+        'all_items'           => __( 'All Services', 'frtb' ),
+        'view_item'           => __( 'View Services', 'frtb' ),
+        'add_new_item'        => __( 'Add New Services', 'frtb' ),
+        'add_new'             => __( 'Add Services', 'frtb' ),
+        'edit_item'           => __( 'Edit Services', 'frtb' ),
+        'update_item'         => __( 'Update Services', 'frtb' ),
+        'search_items'        => __( 'Search Services', 'frtb' ),
         'not_found'           => __( 'Not found', 'frtb' ),
         'not_found_in_trash'  => __( 'Not found in Trash', 'frtb' ),
       );
       $args = array(
-        'label'               => __( 'event', 'frtb' ),
+        'label'               => __( 'service', 'frtb' ),
         'description'         => __( 'Post Type Description', 'frtb' ),
         'labels'              => $labels,
         'supports'            => array( 'title'),
@@ -202,10 +202,10 @@ function event_post_type() {
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
         'capability_type'     => 'page',
-        'rewrite'             => array('slug' => 'events'),
+        'rewrite'             => array('slug' => 'services'),
         'menu_icon'           => 'dashicons-calendar',
       );
-      register_post_type( 'event', $args );
+      register_post_type( 'service', $args );
     }
     
   // Hook into the 'init' action

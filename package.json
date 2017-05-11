@@ -1,0 +1,23 @@
+{
+  "name": "radiance-2",
+  "version": "1.0.0",
+  "description": "Radiance Site",
+  "main": "index.js",
+  "dependencies": {
+    "wp-timber-cli": "^0.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cypherjones/Radiance-Woodlands-Spa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cypherjones/Radiance-Woodlands-Spa/issues"
+  },
+  "homepage": "https://github.com/cypherjones/Radiance-Woodlands-Spa#readme"
+}

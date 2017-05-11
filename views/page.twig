@@ -23,13 +23,14 @@
 							{% else %}
 								{% set color = 'dark' %}
 							{% endif %}
-							<div class="block dark {{ color }}">
-								<img src="{{ TimberImage(service.background_image).src }}" alt="{{ post.title }}">
-								<div class="holder">
-									<h2>{{ service.title }}</h2>
-									<a href="{{ service.page_or_service_link }}" class="btn btn-default">READ MORE</a>
+							<a href="{{ service.page_or_service_link }}">
+								<div class="block dark {{ color }}">
+									<img src="{{ TimberImage(service.background_image).src }}" alt="{{ post.title }}">
+									<div class="holder">
+										<h2>{{ service.title }}</h2>									
+									</div>
 								</div>
-							</div>
+							</a>
 						{% endfor %}
 					</div>
 				{% endif %}
