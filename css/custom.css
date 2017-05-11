@@ -82,6 +82,7 @@
 	position: relative;
 	z-index: 3;
 }
+.page-blcok .block.dark:focus:after,
 .page-block .block.dark:hover:after {
 	background: transparent;
 }
