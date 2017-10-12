@@ -20,8 +20,6 @@
           <span>6777 Woodlands Parkway, Suite 300 <br>The Woodlands, TX 77382</span>
         </address>
         <a href="<?php echo $bya; ?>" class="btn btn-info">BOOK YOUR APPOINTMENT</a>
-      </div>
-      <div class=contact-block pull-right">
         <a href="https://woodlandsradiancespa.brilliantconnections.com" target="_blank">
           <img src="images/BC_ShopLink_Button_ShopNow_Teal_RGB.png" alt="Woodlands Radiance Spa Shop Link">  
         </a>
