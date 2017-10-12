@@ -27,7 +27,7 @@
         </a>
       </div>
     </div>
-    <div class="nav-holder">
+    <div class="nav-holder"> 
       <div class="container">
         <nav id="nav">
           <a href="#" class="nav-opener"><strong>Menu</strong> <span>Menu</span></a>
