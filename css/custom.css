@@ -86,7 +86,7 @@
 .page-block .block.dark:hover:after {
 	background: transparent;
 }
-.shop-button {
+.shop-btn a {
 	margin-left: 15px;
-	width: 175px;
+	width: 220px;
 }
