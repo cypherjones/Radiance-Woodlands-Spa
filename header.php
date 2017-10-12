@@ -21,6 +21,11 @@
         </address>
         <a href="<?php echo $bya; ?>" class="btn btn-info">BOOK YOUR APPOINTMENT</a>
       </div>
+      <div class="contact-block pull-right">
+        <a href="woodlandsradiancespa.brilliantconnections.com" target="_blank">
+          <img src="/images/BC_ShopLink_Button_ShopNow_Teal_RGB.png" alt="Woodlands Radiance Spa Shop Link">  
+        </a>
+      </div>
     </div>
     <div class="nav-holder">
       <div class="container">
