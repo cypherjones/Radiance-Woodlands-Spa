@@ -21,7 +21,7 @@
         </address>
         <a href="<?php echo $bya; ?>" class="btn btn-info">BOOK YOUR APPOINTMENT</a>
         <a class="shop-btn" href="https://woodlandsradiancespa.brilliantconnections.com">
-          <img src="<?php get_bloginfo( 'template_directory' ); ?>/images/BC_ShopLink_Button_ShopNow_Teal_RGB.png" alt="Woodlands Radiance Spa Shop Link">
+          <img src="http://www.woodlandsradiancespa.com/wp-content/themes/radiance-2/images/BC_ShopLink_Button_ShopNow_Teal_RGB.png" alt="Woodlands Radiance Spa Shop Link">
         </a>
       </div>
     </div>
