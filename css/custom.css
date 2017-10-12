@@ -86,3 +86,6 @@
 .page-block .block.dark:hover:after {
 	background: transparent;
 }
+.shop-button {
+	margin-left: 15px;
+}
