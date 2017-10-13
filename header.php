@@ -24,6 +24,9 @@
           <span>6777 Woodlands Parkway, Suite 300 <br>The Woodlands, TX 77382 <br><a href="tel:281-367-4700">281-367-4700</a></span>
         </address>
         <a href="<?php echo $bya; ?>" class="btn btn-info btn-cta">Request an Appointment</a>
+        <a href="http://woodlandsradiancespa.brilliantconnections.com" target="_blank">
+          <img src="<?php bloginfo( 'template_directory' ) ?>/images/BC_ShopLink_Button_ShopNow_White_RGB.png" alt="Woodlands Radiance Spa Shop Link">
+        </a>
       </div>
     </div>
     <div class="nav-holder">
