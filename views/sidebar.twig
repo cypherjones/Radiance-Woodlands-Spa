@@ -3,12 +3,14 @@
 		<div class="block dark">
 			<img src="{{ TimberImage(sidebar_top_img) }}" alt="sidebar top image">
 			<div class="holder">
-				<h2>{{ sidebar_top_content }}</h2>
+				<h2>
+					<a href="{{ sidebar_top_cta_link }}">{{ sidebar_top_content }}</a>
+				</h2>
 			</div>
 		</div>
 	</div>
 		<div class="link-block grey">
-			<a href="#">
+			<a href="{{ sidebar_middle_cta_link }}">
 				<img src="{{ TimberImage(sidebar_middle_img) }}" alt="sidebar middle image">
 				<div class="holder">
 					<h2>{{ sidebar_middle_content }}</h2>
@@ -19,8 +21,10 @@
 		<div class="block light">
 			<img src="{{ TimberImage(sidebar_bottom_img) }}" alt="sidebar bottom image">
 			<div class="holder">
-				<h2>{{ sidebar_bottom_content }}</h2>
+				<h2>
+					<a href="{{ sidebar_bottom_cta_link }}">{{ sidebar_bottom_content }}</a>
+				</h2>
 			</div>
-		</div>
+		</div>	
 	</div>
 </aside>

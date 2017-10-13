@@ -4,7 +4,7 @@
 
   $args = array(
 
-    'post_type' => 'service'
+    'post_type' => 'team'
 
     );
 

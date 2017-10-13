@@ -12,7 +12,7 @@
   $sec_cta_events_url = get_field('events_cta_url', 'options');
 
  ?>
-<section class="description-block" style="background-image:url('<?php echo $sec_cta_bkg_img; ?>');">
+<section id="services" class="description-block" style="background-image:url('<?php echo $sec_cta_bkg_img; ?>');">
   <div class="container">
     <div class="row">
       <div class="col-sm-8">

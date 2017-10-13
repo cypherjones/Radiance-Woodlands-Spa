@@ -1,23 +1,39 @@
+<section class="beefy subPage info-visual"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 page-relative bio-single">
+        <h1>{{ post.title }}</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content-holder">
+  {% if TimberImage(post.get_field('team_head_shot')).src is empty %}
+   <div class="container">
+    <div class="row">
+      <div class="content col-md-12 ">
+        {{post.team_bio}}
+        {# <a href="#" class="book">Book your appointment</a> #}
+        {{ function( 'social_warfare' ) }}
+      </div>
+    </div>
+  </div>
+  {% else %}
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="{{ TimberImage(post.get_field('team_head_shot')).src }}" alt="" class="img-responsive">
+      </div>
+      <div class="content col-md-9 col-lg-8 ">
+        {{post.team_bio}}
+        {# <a href="#" class="book">Book your appointment</a> #}
+        {{ function( 'social_warfare' ) }}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</section>
 
-  <section class="info-visual light" style="background-image:url({{ TimberImage(post.get_field('team_head_shot')).src }});">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 single-relative">
-          <h1>{{ post.title }}</h1>
-          {{ function( 'social_warfare' ) }}
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="content-holder">
-    <div class="container">
-      <div class="row">
-        <div class="content col-md-9 col-lg-8 col-md-offset-1 col-lg-offset-2">
-          {{post.team_bio}}
-          <a href="#" class="book">Book your appointment</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  
 {% include 'partials/cta.twig' %}
+

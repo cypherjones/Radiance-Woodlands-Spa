@@ -10,6 +10,28 @@
 				<div class="col-md-3">
 					{{sidebar}}
 				</div>
+				<div class="col-md-12">
+					{% if post.get_field('want_ps') %}
+						<div class="four-blocks">
+							{% for service in post.get_field('pages_and_services') %}
+								{# color class loop #}
+								{% if 0 == loop.index % 2 %}
+									{% set color = 'light' %}
+								{% else %}
+									{% set color = 'dark' %}
+								{% endif %}
+								<a href="{{ service.page_or_service_link }}">
+									<div class="block dark {{ color }}">
+										<img src="{{ TimberImage(service.background_image).src }}" alt="{{ post.title }}">
+										<div class="holder">
+											<h2>{{ service.title }}</h2>									
+										</div>
+									</div>
+								</a>
+							{% endfor %}
+						</div>
+					{% endif %}
+				</div>
 			{% else %}
 				<div class="col-md-12">
 					{{post.content}}

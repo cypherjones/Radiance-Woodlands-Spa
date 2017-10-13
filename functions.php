@@ -49,7 +49,14 @@ if( function_exists('acf_add_options_page') ) {
 // Register CSS 
 
   function theme_name_scripts() {
-  	wp_enqueue_style( 'style-name', get_stylesheet_uri() );
+  	
+    wp_enqueue_script('owl.carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array(), '1.0.0', true );
+    wp_enqueue_script('settings', get_template_directory_uri() . '/js/settings.js', array(), '1.0.0', true );
+    wp_register_style('owl-carousel', get_template_directory_uri() .'/css/owl.carousel.css', array(), null, 'all' );
+    wp_register_style('owl-theme', get_template_directory_uri() .'/css/owl.theme.default.css', array(), null, 'all' );
+    wp_enqueue_style( 'owl-carousel' );
+    wp_enqueue_style( 'owl-theme' );
+    wp_enqueue_style( 'style-name', get_stylesheet_uri() );
     // wp_enqueue_script( 'jquery' ); 
   }
 
@@ -64,8 +71,8 @@ if( function_exists('acf_add_options_page') ) {
   function my_filter_head() { remove_action('wp_head', '_admin_bar_bump_cb'); }
   add_action('get_header', 'my_filter_head');
 
-  function my_function_admin_bar(){ return false; }
-  add_filter( 'show_admin_bar' , 'my_function_admin_bar');
+  // function my_function_admin_bar(){ return false; }
+  // add_filter( 'show_admin_bar' , 'my_function_admin_bar');
 
 // This theme uses wp_nav_menu() in one location
 
