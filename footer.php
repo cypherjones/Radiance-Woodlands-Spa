@@ -13,6 +13,9 @@
 		<?php get_template_part('partials/footer/footer' ); ?>
 	</div>
     <script src="<?php bloginfo('template_directory' ); ?>/js/wow.min.js"></script>
+    <?php if (is_page('ultherapy')) { ?>
+    	foo
+    	<?php } ?>
     <script>
       new WOW().init();
     </script>
