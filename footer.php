@@ -14,7 +14,7 @@
 	</div>
     <script src="<?php bloginfo('template_directory' ); ?>/js/wow.min.js"></script>
     <?php if (is_page('ultherapy')) { ?>
-    	foo
+    	<script src="https://widget.newlooknow.com/static/js/script.js?afid=186025" type="text/javascript"></script>
     	<?php } ?>
     <script>
       new WOW().init();
