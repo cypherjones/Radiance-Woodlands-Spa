@@ -62,10 +62,6 @@ if( function_exists('acf_add_options_page') ) {
 
   add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 
-
-
-
-
 // Remove that awkward admin bar 
 
   function my_filter_head() { remove_action('wp_head', '_admin_bar_bump_cb'); }
@@ -316,5 +312,12 @@ require_once('wp_bootstrap_pagination.php');
       }
       return $classes;
   }
+
+  function defer_parsing_of_js ( $url ) {
+    if ( FALSE === strpos( $url, '.js' ) ) return $url;
+    if ( strpos( $url, 'jquery.js' ) ) return $url;
+    return "$url' defer ";
+  }
+  add_filter( 'clean_url', 'defer_parsing_of_js', 11, 1 );
 
 ?>
