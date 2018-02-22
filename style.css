@@ -10,6 +10,16 @@ Text Domain: base
 Tags: one-column, two-columns
 Theme URI:
 */
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 #header .nav-holder .nav-drop,
 .footer-holder .footer-nav ul {
 	margin: 0;
