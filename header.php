@@ -34,7 +34,6 @@
         <nav id="nav">
           <a href="#" class="nav-opener"><strong>Menu</strong> <span>Menu</span></a>
             <?php get_template_part('partials/main/nav' ); ?>
-            foo
         </nav>
       </div>
     </div>
