@@ -17,7 +17,7 @@
     main container of all the page elements -->
     <header id="header">
     <div class="container">
-      <div class="logo pull-left"><a href="<?php bloginfo('url' ); ?>"><img src="<?php bloginfo('template_directory' ); ?>/images/radiance-logo-black.png" alt="Radiance advanced skin & body care"></a></div>
+      <div class="logo pull-left"><a href="<?php bloginfo('url' ); ?>"><img src="<?php bloginfo('template_directory' ); ?>/images/RADIANCE_NEW-LOGO-transparent_small.png" alt="Radiance advanced skin & body care"></a></div>
       <div class="contact-block pull-right">
         <address class="pull-left">
           <i class="fa fa-map-marker" aria-hidden="true"></i>
