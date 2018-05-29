@@ -1,5 +1,5 @@
 <div class="footer-panel">
-	<div class="logo pull-right"><a href="#"><img src="<?php bloginfo('template_directory' ); ?>/images/radiance-logo-black.png" alt="Radiance advanced skin & body care"></a></div>
+	<div class="logo pull-right"><a href="#"><img src="<?php bloginfo('template_directory' ); ?>/images/RADIANCE_NEW-LOGO-transparent_small.png" alt="Radiance advanced skin & body care"></a></div>
 	<div class="pull-left social-holder">
 		<span class="social-text">FOLLOW US</span>
 		<ul class="social-list list-unstyled">
